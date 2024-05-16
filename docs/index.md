@@ -2,19 +2,19 @@
 layout: home
 
 hero:
-  name: vitepress-template
-  text: A template using vitepress.
-  tagline: vitepress / template
+  name: note
+  text: 我的笔记仓库
+  tagline: vue / code
   image:
     src: https://vitepress.dev/vitepress-logo-large.webp
-    alt: vitepress-template
+    alt: note docs
   actions:
     - theme: brand
-      text: Start Read
-      link: /guide/index
+      text: 查看
+      link: /vue/index
     - theme: alt
       text: Github
-      link: https://github.com/dlzmoe/vitepress-template
+      link: https://github.com/dlzmoe/note-docs
 
 features:
   - icon: ❤️

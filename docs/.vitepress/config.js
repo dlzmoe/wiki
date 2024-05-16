@@ -6,19 +6,19 @@ import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
 const taskLists = require('markdown-it-task-checkbox')
 
 export default {
-  title: 'vitepress-template',
+  title: 'note docs',
   dist: '/dist',
   head: [
     ['link', { rel: 'icon', href: '/favicon.svg' }]
   ],
-  vite: {
-    plugins: [
-      AutoSidebar({
-        collapsed: true,
-        titleFromFile: true,
-      }),
-    ],
-  },
+  // vite: {
+  //   plugins: [
+  //     AutoSidebar({
+  //       collapsed: true,
+  //       titleFromFile: true,
+  //     }),
+  //   ],
+  // },
   markdown: {
     config: (md) => {
       md.use(taskLists, { 
@@ -32,15 +32,15 @@ export default {
     }
   },
   themeConfig: {
-    siteTitle: 'vitepress-template💡',
+    siteTitle: 'note docs💡',
     sidebar,
     nav,
     editLink: {
-      pattern: 'https://github.com/dlzmoe/vitepress-template/blob/main/docs/:path',
+      pattern: 'https://github.com/dlzmoe/note-docs/blob/main/docs/:path',
       text: '在 GitHub 上编辑此页面'
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/dlzmoe/vitepress-template' },
+      { icon: 'github', link: 'https://github.com/dlzmoe/note-docs' },
     ],
     lastUpdated: true,
     lastUpdatedText: '最后更新于',
