@@ -32,7 +32,7 @@ Vue.use(Vuex);
 const vuexLocal = new VuexPersistence({
   storage: window.localStorage,
   reducer: (state) => ({
-    userData: state.userData, // 存入localStorage的值
+    userData: state.userData, // 存入 localStorage 的值
   }),
 });
 
@@ -76,7 +76,7 @@ import VuexPersistence from 'vuex-persist';
 const vuexLocal = new VuexPersistence({
   storage: window.localStorage,
   reducer: (state) => ({
-    userData: state.userData, // 存入localStorage的值
+    userData: state.userData, // 存入 localStorage 的值
   }),
 });
 

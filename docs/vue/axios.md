@@ -2,7 +2,7 @@
 
 ## 1. axios 拦截器
 
-拦截401，对非登录请求添加token
+拦截 401，对非登录请求添加 token
 
 ```js
 // request.js
@@ -34,10 +34,10 @@ axiosInstance.interceptors.response.use(
     return response;
   },
   error => {
-    // 判断是否为401错误
+    // 判断是否为 401 错误
     if (error.response && error.response.status === 401) {
       console.log('401', error);
-      // 处理401错误，比如跳转到登录页面或重新获取token
+      // 处理 401 错误，比如跳转到登录页面或重新获取 token
       router.push('/login/index');
       localStorage.clear();
     }
