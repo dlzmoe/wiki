@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: note
+  name: note docs
   text: 我的笔记仓库
   tagline: vue / code
   image:

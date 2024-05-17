@@ -118,3 +118,7 @@ html {
   border: none;
   border-top: 1px solid var(--vp-c-divider);
 }
+
+.vp-doc h1 {
+  font-size: 28px;
+}
