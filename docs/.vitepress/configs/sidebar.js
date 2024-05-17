@@ -13,6 +13,7 @@ function Vue() {
         { text: 'vuex 状态管理', link: '/vue/vuex' },
         { text: 'axios 请求', link: '/vue/axios' },
         { text: '使用 .env 配置环境', link: '/vue/env' },
+        { text: '常见方法', link: '/vue/1' },
       ]
     },
   ]

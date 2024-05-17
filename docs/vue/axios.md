@@ -62,11 +62,15 @@ import request from './request';
 // 文档接口
 
 // 初始化数据
-export function getData(site_id) {
-  return request({
-    url: `/xxx/xxx?id=${site_id}`,
-    method: 'get',
-  })
+export async function getData(id) {
+  try {
+    return await request({
+      url: `/xxx/xxx?id=${id}`,
+      method: 'get'
+    })
+  } catch (err) {
+    console.log(err);
+  }
 }
 
 export function getData(data) {
