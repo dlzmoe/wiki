@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 查看
-      link: /vue/index
+      link: /guide/index
     - theme: alt
       text: Github
       link: https://github.com/dlzmoe/note-docs

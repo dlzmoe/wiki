@@ -1,33 +1,26 @@
 export default {
   '/guide/': Guide(),
-  '/vue/': Vue(),
-}
-
-function Vue() {
-  return [
-    { text: '开始', link: '/vue/index' },
-    {
-      text: '笔记',
-      collapsed: false,
-      items: [
-        { text: 'vuex 状态管理', link: '/vue/vuex' },
-        { text: 'axios 请求', link: '/vue/axios' },
-        { text: '使用 .env 配置环境', link: '/vue/env' },
-        { text: '常见方法', link: '/vue/1' },
-      ]
-    },
-  ]
 }
 
 function Guide() {
   return [
-    { text: 'Start Read', link: '/guide/index' },
+    { text: '开始', link: '/guide/index' },
     {
-      text: 'Introduce',
-      collapsed: true,
+      text: 'Vue',
+      collapsed: false,
       items: [
-        { text: 'Start Read', link: '/guide/index' },
-        { text: 'Nocomment', link: '/guide/demo/nocomment' },
+        { text: 'vuex 状态管理', link: '/guide/vue/vuex' },
+        { text: 'axios 请求', link: '/guide/vue/axios' },
+        { text: '使用 .env 配置环境', link: '/guide/vue/env' },
+        { text: '常见方法', link: '/guide/vue/1' },
+      ]
+    },
+    {
+      text: '工具',
+      collapsed: false,
+      items: [
+        { text: 'Chrome 扩展', link: '/guide/tools/plugin' },
+        { text: '油猴脚本', link: '/guide/tools/scripts' },
       ]
     },
   ]

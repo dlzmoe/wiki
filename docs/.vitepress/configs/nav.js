@@ -1,5 +1,5 @@
 export default [
-  { text: 'Vue 笔记', link: '/vue/index' },
+  { text: '笔记', link: '/guide/index' },
   // {
   //   text: 'Other',
   //   items: [
