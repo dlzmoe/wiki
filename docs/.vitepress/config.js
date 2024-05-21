@@ -1,6 +1,13 @@
 import sidebar from './configs/sidebar';
 import nav from './configs/nav';
 
+import { RssPlugin, RSSOptions } from 'vitepress-plugin-rss'
+const RSS = {
+  title: '奇趣周刊',
+  baseUrl: 'https://docs.zishu.me',
+  copyright: 'Copyright (c) 2020-present, 子舒',
+}
+
 import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
 
 const taskLists = require('markdown-it-task-checkbox')
@@ -11,14 +18,17 @@ export default {
   head: [
     ['link', { rel: 'icon', href: '/favicon.svg' }]
   ],
-  // vite: {
-  //   plugins: [
-  //     AutoSidebar({
-  //       collapsed: true,
-  //       titleFromFile: true,
-  //     }),
-  //   ],
-  // },
+  vite: {
+    plugins: [
+      /* vitepress rss 插件 */
+      RssPlugin(RSS),
+      /* 自动生成左侧 */
+      // AutoSidebar({
+      //   collapsed: true,
+      //   titleFromFile: true,
+      // }),
+    ],
+  },
   markdown: {
     config: (md) => {
       md.use(taskLists, { 
@@ -31,6 +41,7 @@ export default {
       })
     }
   },
+  ignoreDeadLinks: true,
   themeConfig: {
     siteTitle: 'note docs💡',
     sidebar,

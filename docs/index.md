@@ -2,15 +2,18 @@
 layout: home
 
 hero:
-  name: note docs
-  text: 我的笔记仓库
-  tagline: vue / code
+  name: Docs
+  text: 我的文档
+  tagline: weekly / note
   image:
     src: https://vitepress.dev/vitepress-logo-large.webp
-    alt: note docs
+    alt: Docs
   actions:
     - theme: brand
-      text: 查看
+      text: 周刊
+      link: /weekly/index
+    - theme: alt
+      text: 笔记
       link: /guide/index
     - theme: alt
       text: Github
@@ -18,14 +21,14 @@ hero:
 
 features:
   - icon: ❤️
-    title: Vitepress
-    details: vitepress
+    title: 周刊
+    details: 奇趣周刊，每周四发布，分享有趣的软件，程序，动态新闻等。
   - icon: 😎
-    title: Template
-    details: template
+    title: 笔记
+    details: 记录编程中的笔记。
   - icon: 👾
-    title: About
-    details: about
+    title: 文档
+    details: 一些杂七杂八的东西。
 
 ---
 
