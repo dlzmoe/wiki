@@ -1,9 +1,9 @@
 {
-  "name": "note-docs",
+  "name": "docs",
   "version": "1.1.0",
   "main": "index.js",
   "license": "MIT",
-  "repository": "https://github.com/dlzmoe/vitepress-template",
+  "repository": "https://github.com/dlzmoe/docs",
   "homepage": "https://zishu.me",
   "author": "dlzmoe",
   "scripts": {

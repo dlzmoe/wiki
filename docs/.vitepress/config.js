@@ -47,11 +47,11 @@ export default {
     sidebar,
     nav,
     editLink: {
-      pattern: 'https://github.com/dlzmoe/note-docs/blob/main/docs/:path',
+      pattern: 'https://github.com/dlzmoe/docs/blob/main/docs/:path',
       text: '在 GitHub 上编辑此页面'
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/dlzmoe/note-docs' },
+      { icon: 'github', link: 'https://github.com/dlzmoe/docs' },
     ],
     lastUpdated: true,
     lastUpdatedText: '最后更新于',

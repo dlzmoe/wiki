@@ -17,7 +17,7 @@ hero:
       link: /guide/index
     - theme: alt
       text: Github
-      link: https://github.com/dlzmoe/note-docs
+      link: https://github.com/dlzmoe/docs
 
 features:
   - icon: ❤️
