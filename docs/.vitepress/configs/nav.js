@@ -1,5 +1,5 @@
 export default [
-  { text: '周刊', link: '/weekly/index' },
+  // { text: '周刊', link: '/weekly/index' },
   { text: '笔记', link: '/guide/index' },
   // {
   //   text: 'Other',
