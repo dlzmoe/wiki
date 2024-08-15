@@ -1,32 +1,22 @@
 import sidebar from './configs/sidebar';
 import nav from './configs/nav';
 
-import { RssPlugin, RSSOptions } from 'vitepress-plugin-rss'
-const RSS = {
-  title: '奇趣周刊',
-  baseUrl: 'https://docs.zishu.me',
-  copyright: 'Copyright (c) 2020-present, 子舒',
-}
-
 import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
-
 const taskLists = require('markdown-it-task-checkbox')
 
 export default {
-  title: 'note docs',
+  title: 'Wiki',
   dist: '/dist',
   head: [
-    ['link', { rel: 'icon', href: '/favicon.svg' }]
+    ['link', { rel: 'icon', href: 'https://imgurl.zishu.me/favicon.png' }]
   ],
   vite: {
     plugins: [
-      /* vitepress rss 插件 */
-      RssPlugin(RSS),
       /* 自动生成左侧 */
-      // AutoSidebar({
-      //   collapsed: true,
-      //   titleFromFile: true,
-      // }),
+      AutoSidebar({
+        collapsed: false,
+        titleFromFile: true,
+      }),
     ],
   },
   markdown: {
@@ -43,15 +33,15 @@ export default {
   },
   ignoreDeadLinks: true,
   themeConfig: {
-    siteTitle: 'note docs💡',
+    siteTitle: 'wiki 📓',
     sidebar,
     nav,
     editLink: {
-      pattern: 'https://github.com/dlzmoe/docs/blob/main/docs/:path',
+      pattern: 'https://github.com/dlzmoe/wiki/blob/main/docs/:path',
       text: '在 GitHub 上编辑此页面'
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/dlzmoe/docs' },
+      { icon: 'github', link: 'https://github.com/dlzmoe/wiki' },
     ],
     lastUpdated: true,
     lastUpdatedText: '最后更新于',

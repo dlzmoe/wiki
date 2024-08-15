@@ -2,27 +2,21 @@
 layout: home
 
 hero:
-  name: Docs
-  text: 我的文档
-  tagline: docs / note
+  name: Wiki
+  text: <\code>
+  tagline: 记录我的百科数据。
   image:
     src: https://vitepress.dev/vitepress-logo-large.webp
     alt: Docs
   actions:
-    # - theme: brand
-    #   text: 周刊
-    #   link: /weekly/index
     - theme: brand
-      text: 笔记
+      text: 开始浏览
       link: /guide/index
     - theme: alt
       text: Github
-      link: https://github.com/dlzmoe/docs
+      link: https://github.com/dlzmoe/wiki
 
 features:
-  # - icon: ❤️
-  #   title: 周刊
-  #   details: 奇趣周刊，每周四发布，分享有趣的软件，程序，动态新闻等。
   - icon: 😎
     title: 笔记
     details: 记录编程中的笔记。
