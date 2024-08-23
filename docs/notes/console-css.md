@@ -28,5 +28,3 @@ const data = [
 console.table(data);
 
 ```
-
-![Untitled](%E6%8E%A7%E5%88%B6%E5%8F%B0%E8%BE%93%E5%87%BA%E5%A5%BD%E7%9C%8B%E7%9A%84%20console%20log%20ca5649a2e9ad4ef88349efcbbbab0440/Untitled.png)

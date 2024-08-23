@@ -26,10 +26,6 @@ span {
 </div>
 ```
 
-**示例：**
-
-![Untitled](%E6%96%87%E5%AD%97%E5%92%8C%E8%83%8C%E6%99%AF%E6%B7%B7%E5%90%88%E5%8F%98%E8%89%B2%EF%BC%8C%E4%B8%80%E5%8D%8A%E9%BB%91%E4%B8%80%E5%8D%8A%E7%99%BD%207663d48d38104fa884c9e4387d65dedb/Untitled.png)
-
 ```jsx
 body {
   background: #fff;
