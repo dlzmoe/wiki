@@ -1,4 +1,3 @@
-import sidebar from './configs/sidebar';
 import nav from './configs/nav';
 
 import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
@@ -8,20 +7,24 @@ export default {
   title: 'Wiki',
   dist: '/dist',
   head: [
-    ['link', { rel: 'icon', href: 'https://imgurl.zishu.me/favicon.png' }]
+    ['link', {
+      rel: 'icon',
+      href: 'https://imgurl.zishu.me/favicon.png'
+    }]
   ],
   vite: {
     plugins: [
       /* 自动生成左侧 */
       AutoSidebar({
-        collapsed: false,
-        titleFromFile: true,
-      }),
+        ignoreIndexItem: true, // 忽略首页
+        titleFromFile: true, // 读取 md 文件 # 一级标题作为侧边
+        collapsed: false, // 是否默认收缩
+      })
     ],
   },
   markdown: {
     config: (md) => {
-      md.use(taskLists, { 
+      md.use(taskLists, {
         disabled: true,
         divWrap: false,
         divClass: 'checkbox',
@@ -34,15 +37,15 @@ export default {
   ignoreDeadLinks: true,
   themeConfig: {
     siteTitle: 'wiki 📓',
-    sidebar,
     nav,
     editLink: {
       pattern: 'https://github.com/dlzmoe/wiki/blob/main/docs/:path',
       text: '在 GitHub 上编辑此页面'
     },
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/dlzmoe/wiki' },
-    ],
+    socialLinks: [{
+      icon: 'github',
+      link: 'https://github.com/dlzmoe/wiki'
+    }, ],
     lastUpdated: true,
     lastUpdatedText: '最后更新于',
     footer: {

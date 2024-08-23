@@ -11,18 +11,24 @@ hero:
   actions:
     - theme: brand
       text: 开始浏览
-      link: /guide/index
+      link: /code/home
     - theme: alt
       text: Github
       link: https://github.com/dlzmoe/wiki
 
 features:
-  - icon: 😎
+  - icon: ⚡
+    title: 编程
+    details: javascript、vye、css、python 等语言记录。
+  - icon: 🦊
+    title: 工具
+    details: 各种工具使用分享教程等。
+  - icon: 🐵
+    title: 油猴
+    details: chrome 扩展、油猴插件等信息。
+  - icon: 📖
     title: 笔记
-    details: 记录编程中的笔记。
-  - icon: 👾
-    title: 文档
-    details: 一些杂七杂八的东西。
+    details: 记录一些不好分类的笔记。
 
 ---
 

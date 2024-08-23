@@ -1306,6 +1306,13 @@ vitepress-plugin-search@^1.0.4-alpha.20:
     glob-to-regexp "^0.4.1"
     markdown-it "^13.0.1"
 
+vitepress-sidebar@^1.25.0:
+  version "1.25.0"
+  resolved "https://registry.npmmirror.com/vitepress-sidebar/-/vitepress-sidebar-1.25.0.tgz#df736bde4f860479dc4fe843a7a5208ce16a8b7a"
+  integrity sha512-hbS6DEQjdZS1lbm8p1AKrzdfoFDf4Eas/Dmr1xbN+yv9XVf6xAW+q4tJINmuAt6vnvkEgylZlcH1PGzKX0RgcA==
+  dependencies:
+    gray-matter "^4.0.3"
+
 vitepress@^1.0.0-alpha.65:
   version "1.1.0"
   resolved "https://registry.npmmirror.com/vitepress/-/vitepress-1.1.0.tgz"
